@@ -1,0 +1,790 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- index.html  03:18:33 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Envvu | Marketing Solutions Pvt.Ltd</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/logo small.png' %}" />
+  <!-- google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;display=swap" rel="stylesheet">
+  <!-- css styles -->
+  <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/odometer-theme-default.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+</head>
+
+<body style="background-color:#E7E7E7">
+  <!-- Start Pre-loader -->
+  <div class="pre-loader-wrap">
+    <div class="pre-loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+      <span>Loading...</span>
+    </div>
+  </div>
+  <!-- End Pre-loader -->
+
+  <!-- Start header section -->
+  <section class="header-section home-one">
+    <header class="header-area">
+      <div class="dope-nav-container breakpoint-off">
+        <div class="container">
+          <div class="row">
+            <!-- Main Menu -->
+            <nav class="dope-navbar justify-content-between" id="dopeNav">
+
+              <!-- Logo -->
+              <a  href="{% url 'index' %}"><img style="width: 200px" src="{% static 'assets/img/envvu png wht line.png' %}" alt=""></a>
+
+              <!-- Navbar Toggler -->
+              <div class="dope-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <!-- Menu -->
+              <div class="dope-menu">
+                <!-- close btn -->
+                <div class="dopecloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <!-- Nav Start -->
+                <div class="dopenav">
+                  <ul id="nav">
+                    <li class="current"><a href="{% url 'index' %}">Home</a>
+                     
+                    </li>
+
+                    <li><a href="{% url 'about' %}">About</a></li>
+                 <li><a href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li><a href="{% url 'digitalmarketing' %}">Digital Marketing</a></li>
+                        <li><a href="{% url 'production' %}">Multimedia Production</a></li>
+                        <li><a href="{% url 'webdevelopment' %}">Web Designing & Developments</a></li>
+                        
+                      </ul>
+                    </li>
+					  <li><a href="{% url 'team' %}">Team</a></li>
+					  <li><a href="{% url 'gallery' %}">Gallery</a></li>
+					  <li><a href="{% url 'blog' %}">Blog</a></li>
+					  <li><a href="{% url 'career' %}">Career</a></li>	
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+
+                </div>
+                <!-- Nav End -->
+                <a href="{% url 'contact' %}" class="menu-btn">Get a quote</a>
+              </div>
+            </nav>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row section-gap header-content">
+        <div class="col-lg-7 col-md-8 header-text-wrap">
+          <h1>Online Treasure Hunting Contest
+ 
+          <p> 
+
+            Find The Treasure And Win 5000Rs </p>
+          <a class="btn-style blue-btn" href="{% url 'contest' %}">Join Contest</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header section -->
+
+  <!-- Start services section -->
+  <section class="services-section section-gap home-one">
+    <div class="container">
+      <div  class="row d-flex justify-content-center section-title">
+        <div  class="col-lg-6 col-md-8 col-12">
+          <h1>Creative Digital Marketing Strategies
+</h1>
+          <p>We help businesses to grow through the best brand strategies, web development, and digital marketing. 
+
+</p>
+        </div>
+      </div>
+      <div  class="row d-flex justify-content-center">
+        <div  class="col-lg-4 col-md-6 col-12">
+          <div style="background-color:white; height: 500px;" class="single-service text-center">
+            <img src="{% static 'assets/img/s2.png' %}" alt=>
+            <h4>Digital Marketing</h4>
+            <p style="text-align: justify;">We help in increasing conversions, targeted traffic, and revenue. At Envvu, we partner with brands for creating various multichannel marketing strategies that drive results. The multi-channel marketing approach we follow is primarily focused on increasing conversions, repeating traffic, and generating bigger brand loyalty. 
+</p><br>
+			   <button type="button"><a href="{% url 'digitalmarketing' %}"s>Learn More</a></button>
+          </div>
+        </div>
+        <div  class="col-lg-4 col-md-6 col-12">
+          <div style="background-color:white; height: 500px;" data-tilt class="single-service text-center">
+            <img src="{% static 'assets/img/w3.png' %}" alt=>
+            <h4>Multimedia Production</h4>
+            <p style="text-align: justify;">Being an experienced online digital marketing agency we are aware of the importance of videos in the marketing sector. All businesses like to go viral and they are on the lookout for developing leads and increasing sales. We create videos matching the various portfolios of businesses that present their identity and brand.
+
+
+
+</p><br>
+			  <button type="button"><a href="{% url 'production' %}">Learn More</a></button>
+          </div>
+        </div>
+        
+        <div  class="col-lg-4 col-md-6 col-12">
+          <div style="background-color:white; height: 500px;" class="single-service text-center">
+            <img src="{% static 'assets/img/s3.png' %}" alt=>
+            <h4>Web Development</h4>
+            <p style="text-align: justify;">We are aware that the digital landscape never stops changing. However, the quality of the company’s overall digital presence is important. Being an experienced web development agency, we help in determining what users view when they land on your website, optimize the websites, and manage operations for making the user experience trouble-free. 
+            </p><br>
+			  <button type="button"><a href="{% url 'webdevelopment' %}"s>Learn More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End services section -->
+
+  <!-- Start info section -->
+  <section class="info-section section-gap-bottom home-one" style="background-color: white;">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-12 info-left">
+          <img src="{% static 'assets/im/digital-marketing-php-developer-jobs-meerut-delhi-ncr-ghaziabad-muzaffarnagar.gif' %}" alt="" height="615" width="700">
+        </div>
+        <div class="col-lg-6 col-md-12 info-right">
+          <h1>Rebranding, Redesigning & Recreating A Great Digital Experience</h1>
+			<p>As an out-of-the-box SEO firm, we provide the best online marketing and branding services for various startups. We have a good understanding of the human implications related to digital data. 
+</p>
+          <ul>
+            <li>
+              <div class="list-icon"><img src="{% static 'assets/img/b1.png' %}" alt=></div>
+              <p>We are more than a simple digital agency. Think of us as modern management consultants for increasing your brand value and sales. </p>
+            </li>
+            <li>
+              <div class="list-icon"><img src="{% static 'assets/img/b2.png' %}" alt=></div>
+              <p>We follow tailor-made strategies that curate the challenges at hand. Providing a bespoken pathway leading to the best enterprise values is what we do.</p>
+            </li>
+            <li>
+              <div class="list-icon"><img src="{% static 'assets/img/b3.png' %}" alt=></div>
+              <p>
+                Our team breathes life into various strategies along with the best digital experiences. These will grow your business and connect your brand with the right targets.
+
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End info section -->
+
+  <!-- Start why-choose section -->
+  <section class="why-choose-section section-gap">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-between">
+        <img class="pattern-right" src="{% static 'assets/img/why-pattern.png' %}" alt=>
+        <div class="col-lg-6 col-md-12">
+          <div class="row">
+            <div class="col-md-6 col-6">
+              <div class="single-why text-center mb-30">
+                <img src="{% static 'assets/img/w1.png' %}" alt="">
+                <h4>Strategy Planning</h4>
+              </div>
+              <div class="single-why text-center">
+                <img src="{% static 'assets/img/w2.png' %}" alt=>
+                <h4>Traffic Ananlysis</h4>
+              </div>
+            </div>
+            <div class="col-md-6 col-6">
+              <div class="single-why text-center mb-30 mt-50">
+                <img src="{% static 'assets/img/w3.png' %}" alt=>
+                <h4>Competetor Analysis</h4>
+              </div>
+
+              <div class="single-why text-center">
+                <img src="{% static 'assets/img/w4.png' %}" alt=>
+                <h4>Website Optimisation</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="why-left-wrap">
+            <h1>Specialized & Goal-Oriented Search Engine Optimization 
+
+</h1>
+            <h5>More than 80% of buyers search for products and services online. Gain a huge wealth of qualified leads and boost conversions through SERPs
+
+            </h5>
+            <p>
+              Envvu marketing provides technical, on-page, and off-page SEO services to clients throughout various industries. We assist in maintaining and assuming positions at top of SERPs. Not only do we help businesses gain more brand visibility, but we even help to meet prospective clients.
+
+            </p>
+            <a class="btn-style blue-btn" href="{% url 'about' %}">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End why-choose section -->
+
+  <!-- Start stat section -->
+  <section class="stat-section section-gap" id="stat_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-stat">
+            <h1>
+              <div class="odometer odometer_number_one">0000</div>
+              <div class="sub-text">Project <br> Completed</div>
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-stat">
+            <h1>
+              <div class="odometer odometer_number_two">000</div>
+              <div class="sub-text">Happy <br> Clients</div>
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-stat">
+            <h1>
+              <div class="odometer odometer_number_three">0000</div>
+              <div class="sub-text">Hours <br> Support</div>
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-stat">
+            <h1>
+              <div class="odometer odometer_number_four">0000</div>
+              <div class="sub-text">Diligent<br> Staffs</div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End stat section -->
+
+  <!-- Start portfolio section -->
+  <section class="portfolio-section section-gap-top">
+    <div class="container">
+      <div class="row d-flex justify-content-center section-title">
+        <div class="col-lg-6 col-md-8 col-12">
+          <h1>Unique Projects For Distinct Clients
+</h1>
+          <p>The projects handled by us are created using the right digital marketing approach leading to better conversion rate and user engagements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-carusel-wrap  owl-carousel owl-theme">
+      <div class="single-portfolio">
+        <div class="thumb">
+          <img src="{% static 'assets/posts(1)/1 COVER.jpg' %}" alt=>
+        </div>
+        <div class="details">
+          <a class="btn-style" href="{% url 'service-details' %}"><i class="icofont-arrow-right"></i></a>
+          <a href="{% url 'service-details' %}">
+            <h4>Cover Page</h4>
+          </a>
+          <p>It is a long established fact that reader will be distracted the readable content of a page when looking at
+            its point.</p>
+        </div>
+      </div>
+      <div class="single-portfolio">
+        <div class="thumb">
+          <img src="{% static 'assets/posts(1)/banner1.jpg' %}" alt=>
+        </div>
+        <div class="details">
+          <a class="btn-style" href="{% url 'service-details' %}"><i class="icofont-arrow-right"></i></a>
+          <a href="{% url 'service-details' %}">
+            <h4>Banner Design</h4>
+          </a>
+          <p>It is a long established fact that reader will be distracted the readable content of a page when looking at
+            its point.</p>
+        </div>
+      </div>
+      <div class="single-portfolio">
+        <div class="thumb">
+          <img src="{% static 'assets/posts(1)/bride 5.jpg' %}" alt=>
+        </div>
+        <div class="details">
+          <a class="btn-style" href="{% url 'service-details' %}"><i class="icofont-arrow-right"></i></a>
+          <a href="{% url 'service-details' %}">
+            <h4>Post Designs</h4>
+          </a>
+          <p>It is a long established fact that reader will be distracted the readable content of a page when looking at
+            its point.</p>
+        </div>
+      </div>
+      <div class="single-portfolio">
+        <div class="thumb">
+          <img src="{% static 'assets/posts(1)/Paper Bags Mockup white 1.jpg' %}" alt=>
+        </div>
+        <div class="details">
+          <a class="btn-style" href="{% url 'service-details' %}"><i class="icofont-arrow-right"></i></a>
+          <a href="{% url 'service-details' %}">
+            <h4>Mockup Designs</h4>
+          </a>
+          <p>It is a long established fact that reader will be distracted the readable content of a page when looking at
+            its point.</p>
+        </div>
+      </div>
+      <div class="single-portfolio">
+        <div class="thumb">
+          <img src="{% static 'assets/im/hasis poster 1.jpg' %}" alt=>
+        </div>
+        <div class="details">
+          <a class="btn-style" href="{% url 'service-details' %}"><i class="icofont-arrow-right"></i></a>
+          <a href="{% url 'service-details' %}">
+            <h4>Poster Design</h4>
+          </a>
+          <p>It is a long established fact that reader will be distracted the readable content of a page when looking at
+            its point.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End portfolio section -->
+
+  <!-- Start info-two section -->
+  <section class="info-two-section section-gap home-one">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center position-relative">
+        <img class="pattern" src="{% static 'assets/img/info2-pattern.png' %}" alt=>
+        <div class="col-lg-6 col-md-10 col-12 info-left">
+          <div class="info-left-wrap">
+            <h1>Robust Implementations & Growth Strategies
+</h1>
+            <p class="sub-text">
+              Just think of us as a group of creative nerds. We enjoy showing something new and doing something that we love every day.
+
+            </p>
+            <div class="row bottom-txt-wrap">
+              <div class="col-md-6 col-12 single-bottom-wrap">
+                <img src="{% static 'assets/img/i5.png' %}" alt=>
+                <h4>Innovative Ideas
+</h4>
+                <p>Consider us as intellection that brain-storm with clients for best results.
+</p>
+              </div>
+              <div class="col-md-6 col-12 single-bottom-wrap">
+                <img src="{% static 'assets/img/i6.png' %}" alt=>
+                <h4>Certified Solutions 
+</h4>
+                <p>Solutions are all white-hat SEO and ones that have proven great outcomes.
+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 info-right">
+          <img src="{% static 'assets/img/i2.png' %}" alt=>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End info-two section -->
+  <!-- Start testimonial section -->
+  <section class="testimonial-section section-gap">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-5 col-md-12 testimonial-left">
+          <h1>What Customers Feel About ?</h1>
+          <p>
+           Customers who have been impressed with our best-in-class digital marketing services.
+
+          </p>
+          <div id="leftNav" class="owl-nav"></div>
+        </div>
+        <div class="col-lg-7 col-md-12 testimonial-right">
+          <div class="testimonial-carousel owl-carousel owl-theme">
+            <div class="single-testimonial">
+              <p>
+                It uses a dictionary over latin words combined with handful
+                of model sentence structure to generate which looks reasonable the
+                generated Lorem Ipsum is therefore.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="thumb">
+                  <img src="{% static 'assets/img/t1.png' %}" alt=>
+                </div>
+                <div class="details">
+                  <h4>Michelle Payne</h4>
+                  <span>CEO of company</span>
+                </div>
+              </div>
+            </div>
+            <div class="single-testimonial">
+
+              <p>
+                It uses a dictionary over latin words combined with handful
+                of model sentence structure to generate which looks reasonable the
+                generated Lorem Ipsum is therefore always.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="thumb">
+                  <img src="{% static 'assets/img/t1.png' %}" alt=>
+                </div>
+                <div class="details">
+                  <h4>Michelle Payne</h4>
+                  <span>CEO of Google</span>
+                </div>
+              </div>
+            </div>
+            <div class="single-testimonial">
+              <p>
+                It uses a dictionary over latin words combined with handful
+                of model sentence structure to generate which looks reasonable the
+                generated Lorem Ipsum is therefore.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="thumb">
+                  <img src="{% static 'assets/img/t1.png' %}" alt=>
+                </div>
+                <div class="details">
+                  <h4>Michelle Payne</h4>
+                  <span>CEO of Github</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End testimonial section -->
+
+  <!-- Start blog section -->
+  <section class="blog-section section-gap-top">
+    <div class="container">
+      <div class="row d-flex justify-content-center section-title">
+        <div class="col-lg-6 col-md-8 col-12">
+          <h1>Trendy Digital Marketing Blogs</h1>
+          <p>Learn about the latest strategies, design, and app development ideas for business growth 
+</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="single-blog">
+            <div class="feature-thumb">
+              <img src="{% static 'assets/img/b1.jpg' %}" alt=>
+            </div>
+            <div class="details">
+              <a href="#">
+                <h4>Many desktop and rasing package
+                  web page editors existence.</h4>
+              </a>
+              <div class="meta d-flex align-items-center justify-content-between">
+                <div class="author-details d-flex align-items-center">
+                  <div class="author-thumb">
+                    <img src="{% static 'assets/img/author1.png' %}" alt=>
+                  </div>
+                  <div class="meta-text">
+                    <h5>Fatema Kruisem</h5>
+                    <span>03.08.2019</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-wrap"><i class="icofont-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="single-blog">
+            <div class="feature-thumb">
+              <img src="{% static 'assets/img/b2.jpg' %}" alt=>
+            </div>
+            <div class="details">
+              <a href="#">
+                <h4>Extremity direction existence as dashwoods webpage.</h4>
+              </a>
+              <div class="meta d-flex align-items-center justify-content-between">
+                <div class="author-details d-flex align-items-center">
+                  <div class="author-thumb">
+                    <img src="{% static 'assets/img/author2.png' %}" alt=>
+                  </div>
+                  <div class="meta-text">
+                    <h5>Sammy Erickson</h5>
+                    <span>21.08.2019</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-wrap"><i class="icofont-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="single-blog">
+            <div class="feature-thumb">
+              <img src="{% static 'assets/img/b3.jpg' %}" alt=>
+            </div>
+            <div class="details">
+              <a href="#">
+                <h4>Supplied directly pleasant we ignorant ecstatic dashwoods.</h4>
+              </a>
+              <div class="meta d-flex align-items-center justify-content-between">
+                <div class="author-details d-flex align-items-center">
+                  <div class="author-thumb">
+                    <img src="{% static 'assets/img/author1.png' %}" alt=>
+                  </div>
+                  <div class="meta-text">
+                    <h5>Fatema Kruisem</h5>
+                    <span>23.08.2019</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-wrap"><i class="icofont-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+  <!-- End blog section -->
+<strong style="padding-left:150px; font-size: 40px;">Our Clients</strong>
+  <!-- Start logo section -->
+  <section class="brand-logo-section home-one">
+    <div class="container">
+      <div class="row bottom-logo-wrap">
+        <div class="brand-logo-carousel owl-carousel owl-theme">
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/ishalogos.png' %}" alt=>
+            </a>
+          </div>
+			 <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/kaizenlogos.png' %}" alt=>
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/hasislogos.png' %}" alt=>
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/spicelogos.png' %}" alt=>
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/crystalPKDlogos.png' %}" alt=>
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/TPlogos.png' %}" alt=>
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/majesticlogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/tintlogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/sun cmptrslogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/SMRTlogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/semc.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/polaogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/mitaralogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/jessieslogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/hotelogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/crystal TLlogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/bedlogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/atlantalogos.png' %}" alt=>
+            </a>
+          </div>
+			<div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/im/logos(1)/almasslogos.png' %}" alt=>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="quote-section section-gap">
+    <div class="container">
+      <div class="row d-flex align-items-center col-md-rev">
+        <div class="col-lg-6 col-md-12 quote-left">
+          <h1>Get More Traffic to your Business Website!</h1>
+          <p>
+            Two before narrow not relied how except moment myself. Dejection assurance mrs led certainly. So gate at no
+            only none open Betrayed at properly.
+          </p>
+          <p>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguie and demoralized
+            by the charms of pleasure of the by desire, that they cannot foresee the pain and trouble that are bound to
+            ensue; and blame longs to those who fail in their duty through is weakness of will.
+          </p>
+          
+        </div>
+        <div class="col-lg-6 col-md-12 quote-right text-center">
+          <h4>Free SEO Analysis</h4>
+          <form>
+            <input class="form-control" type="text" name="name" placeholder="Company Name">
+            <input class="form-control" type="email" name="email" placeholder="Email Address">
+            <input class="form-control" type="tel" name="phone" placeholder="Phone Number">
+            <input class="form-control" type="text" name="website" placeholder="http://yoursite.com/">
+            <input class="btn-style" type="submit" name="submit" value="Get Free Report">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End logo section -->
+
+  <!-- Start footer section -->
+  <footer class="footer-section section-gap-top home-one">
+    <div class="container">
+      <div class="row footer-top d-flex justify-content-between">
+        <div class="col-lg-4 col-md-6 col-6 footer-widgets">
+          <img src="{% static 'assets/im/EN VVU LOGO.png' %}" alt="en vvu" width="162" height="158" class="footer-logo" >
+          <p>Phone:<a href="tel:+91 7907575988">+91 7907575988</a> <br>
+Email:<a href="mailto:info@envvumarketing.com">info@envvumarketing.com</a> </p>
+          <ul class="social-lists">
+            <li><a href="https://www.facebook.com/envvumarketing/"><i class="icofont-facebook"></i></a></li>
+			  <li><a href="https://twitter.com/envvumarketing"><i class="icofont-twitter"></i></a></li>
+			  
+            <li><a href="https://www.youtube.com/channel/UCde3OSSxVRuugxGtvOe2A_g"><i class="icofont-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/envvumarketing/"><i class="icofont-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/envvumarketingsolutions/"><i class="icofont-linkedin"></i></a></li>
+          </ul>
+		  </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Site Map</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'blog' %}">Blog</a></li>
+			  <li><a href="{% url 'team' %}">Team</a></li>	
+			   <li><a href="{% url 'career' %}">Career</a></li>		
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+			  	
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Services</h4>
+            <ul>
+              <li><a href="{% url 'digitalmarketing' %}">Digital Marketings</a></li>
+              <li><a href="{% url 'production' %}">Production & Media</a></li>
+              <li><a href="{% url 'webdevelopment' %}">Web Design & Development</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Address</h4>
+         <p>Envvu Marketing Solution.
+2nd FLOOR GATEWAY COMPLEX
+ROBINSON ROAD PALAKKAD 678001
+PALAKKAD KERALA</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom section-gap-top d-flex align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:30px; color: white; line-height: 40px;">Trying hard to be seen local?<br> Then Switch to Digital and be Global! <br></p>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="comment-buttons" style="padding-left: 70px; height: 10px;">
+            <div></div>
+            <button class="btn-style red-btn"><h3 style="padding-top: 5px;">Let's Switch to Digital</h3></button>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright-bottom d-flex align-items-center">
+        <div class="col-md-6">
+          <p><a href="envvumarketing.com">En vvu Marketing Solutions Pvt.Ltd</a></p>
+        </div>
+        <div class="col-md-6">
+          <ul>
+           
+            <li><a href="#">Privecy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer section -->
+  <!-- Start Scroll Top -->
+  <div class="scroll-top">
+    <i class="icofont-rounded-up"></i>
+  </div>
+  <!-- End Scroll Top -->
+  <script src="{% static 'assets/js/jquery-3.3.1.slim.min.js' %}"></script>
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/js/dopeNav.js' %}"></script>
+  <script src="{% static 'assets/js/odometer.js' %}"></script>
+  <script src="{% static 'assets/js/tilt.jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+
+<!-- index.html  03:19:24 GMT -->
+</html>

@@ -1,0 +1,319 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- service-details.html  03:20:05 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Web Design & Development | En vvu marketing solutions</title>
+   <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/logo small.png' %}" />
+  <!-- google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;display=swap" rel="stylesheet">
+  <!-- css styles -->
+  <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+</head>
+
+<body>
+  <!-- Start Pre-loader -->
+  <div class="pre-loader-wrap">
+    <div class="pre-loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+      <span>Loading...</span>
+    </div>
+  </div>
+  <!-- End Pre-loader -->
+ <!-- Start header section -->
+  <section class="header-section page-header">
+    <header class="header-area">
+      <div class="dope-nav-container breakpoint-off">
+        <div class="container">
+          <div class="row">
+            <!-- Main Menu -->
+            <nav class="dope-navbar justify-content-between" id="dopeNav">
+
+              <!-- Logo -->
+              <a  href="index.html"><img style="width: 200px" src="{% static 'assets/img/envvu png wht line.png' %}" alt=""></a>
+
+              <!-- Navbar Toggler -->
+              <div class="dope-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <!-- Menu -->
+              <div class="dope-menu">
+                <!-- close btn -->
+                <div class="dopecloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+      <!-- Nav Start -->
+                <div class="dopenav">
+                  <ul id="nav">
+                    <li><a href="{% url 'index' %}">Home</a>
+                     
+                    </li>
+
+                    <li><a href="{% url 'about' %}">About</a></li>
+                 <li class="current-dropdown"><a href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li><a href="{% url 'digitalmarketing' %}">Digital Marketing</a></li>
+                         <li><a href="{% url 'production' %}">Multimedia Production</a></li>
+                        <li><a href="{% url 'webdevelopment' %}">Web Designing & Developments</a></li>
+                        
+                      </ul>
+                    </li>
+					  <li><a href="{% url 'team' %}">Team</a></li>
+					  <li><a href="{% url 'gallery' %}">Gallery</a></li>
+					  <li><a href="{% url 'blog' %}">Blog</a></li>
+					  <li><a href="{% url 'career' %}">Career</a></li>	
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+
+                </div>
+                <!-- Nav End -->
+                <a href="{% url 'contact' %}" class="menu-btn">Get a quote</a>
+              </div>
+            </nav>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row section-gap">
+        <div class="col-md-12">
+          <h1>Web Design & Development</h1>
+          <ul class="pagination">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'service-details' %}">Services</a></li>
+            <li>Service Details</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header section -->
+  <!-- Start portfolio-details section -->
+  <section class="portfolio-details-section section-gap-top">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-8 gallery-wrap">
+          <div class="outer">
+            <div id="big" class="owl-carousel owl-theme portfolio-carousel">
+              <div class="item">
+                <img class="img-fluid" src="{% static 'assets/img/SDGVSZ.jpg' %}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{% static 'assets/img/DF.jpg' %}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{% static 'assets/img/fghsr.jpg' %}" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div  class="col-lg-4 details-container">
+          <div class="details-wrap">
+            
+            <div style="color:white;height:300px" class="details-wrap">
+            <h1>"</h1>
+            <p>The Scrum idea of a separated Scrum Master is good for Scrum, but not appropriate for most projects. Good development requires not just talkers but doers.
+</p>
+            <h1>"</h1>
+            <p>
+Bertrand Meyer</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End portfolio-details section -->
+
+  <!-- Start detail-info section -->
+  <section class="detail-info-section">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center col-md-rev">
+        <div class="col-lg-6 text-wrap">
+          <h1>Web Designing & Development</h1>
+          <p>
+           While creating the custom website design, we try to know all the things related to your business. Through constant discussion with customers, we would create a mockup of the layout and structure and then proceed with your needs. All this at your required budget.
+
+          </p>
+        </div>
+        <div class="col-lg-5 text-center img-wrap">
+          <img class="img-fluid" src="{% static 'assets/img/ezgif.com-gif-make.gif' %}" alt="">
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-5 text-center img-wrap">
+          <img class="img-fluid" src="{% static 'assets/img/jhk.gif' %}" alt="">
+        </div>
+        <div class="col-lg-6 text-wrap">
+          <h1>Desktop Applications</h1>
+          <p>
+            Envvu Marketing engages in designing and building desktop apps that contain Visual Basic development, C# Development, ASP.NET development, VB.NET development, etc. Our desktop application services are strategically-effective, risk-repellant, and even easy-to-maintain. Also, it facilitates the enhancements that are modular to various upgrades.
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between align-items-center col-md-rev">
+        <div class="col-lg-6 text-wrap">
+          <h1>Mobile Applications</h1>
+          <p>
+            Using solid expert knowledge in mobile apps development, our team will create seamless and practical experiences on any device and gain the best of the mobile technology for your business. We would extend the reach of current web portals using content-rich and transactions-centric mobile apps.
+
+          </p>
+        </div>
+        <div class="col-lg-5 text-center img-wrap">
+          <img class="img-fluid" src="{% static 'assets/img/d3.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End detail-info section -->
+  <!-- Start Brand Logo Section -->
+  <section class="brand-logo-section">
+    <div class="container">
+      <div class="row bottom-logo-wrap">
+        <div class="brand-logo-carousel owl-carousel owl-theme">
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand1.png' %}" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand2.png' %}" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand3.png' %}" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand4.png' %}" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand5.png' %}" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="{% static 'assets/img/brand6.png' %} " alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Brand Logo Section -->
+
+  <!-- Start footer section -->
+  <footer class="footer-section section-gap-top home-one">
+    <div class="container">
+      <div class="row footer-top d-flex justify-content-between">
+        <div class="col-lg-4 col-md-6 col-6 footer-widgets">
+          <img src="{% static 'assets/im/EN VVU LOGO.png' %}" alt="en vvu" width="162" height="158" class="footer-logo" >
+          <p>Phone:<a href="tel:+91 7907575988">+91 7907575988</a> <br>
+Email:<a href="mailto:info@envvumarketing.com">info@envvumarketing.com</a> </p>
+          <ul class="social-lists">
+            <li><a href="https://www.facebook.com/envvumarketing/"><i class="icofont-facebook"></i></a></li>
+			  <li><a href="https://twitter.com/envvumarketing"><i class="icofont-twitter"></i></a></li>
+			  
+            <li><a href="https://www.youtube.com/channel/UCde3OSSxVRuugxGtvOe2A_g"><i class="icofont-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/envvumarketing/"><i class="icofont-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/envvumarketingsolutions/"><i class="icofont-linkedin"></i></a></li>
+          </ul>
+		  </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Site Map</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'blog' %}">Blog</a></li>
+			  <li><a href="{% url 'team' %}">Team</a></li>	
+			   <li><a href="{% url 'career' %}">Career</a></li>		
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+			  	
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Services</h4>
+            <ul>
+              <li><a href="{% url 'digitalmarketing' %}">Digital Marketings</a></li>
+              <li><a href="{% url 'production' %}">Production & Media</a></li>
+              <li><a href="{% url 'webdevelopment' %}">Web Design & Development</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Address</h4>
+         <p>Envvu Marketing Solution.
+2nd FLOOR GATEWAY COMPLEX
+ROBINSON ROAD PALAKKAD 678001
+PALAKKAD KERALA</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom section-gap-top d-flex align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:30px; color: white; line-height: 40px;">Trying hard to be seen local?<br> Then Switch to Digital and be Global! <br></p>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="comment-buttons" style="padding-left: 70px; height: 10px;">
+            <div></div>
+            <button class="btn-style red-btn"><h3 style="padding-top: 5px;">Let's Switch to Digital</h3></button>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright-bottom d-flex align-items-center">
+        <div class="col-md-6">
+          <p><a href="envvumarketing.com">En vvu Marketing Solutions Pvt.Ltd</a></p>
+        </div>
+        <div class="col-md-6">
+          <ul>
+           
+            <li><a href="#">Privecy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer section -->
+  <!-- Start Scroll Top -->
+  <div class="scroll-top">
+    <i class="icofont-rounded-up"></i>
+  </div>
+  <!-- End Scroll Top -->
+  <script src="{% static 'assets/js/jquery-3.3.1.slim.min.js' %}"></script>
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/js/dopeNav.js' %}"></script>
+  <script src="{% static 'assets/js/odometer.js' %}"></script>
+  <script src="{% static 'assets/js/tilt.jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+
+<!-- service-details.html  03:20:07 GMT -->
+</html>

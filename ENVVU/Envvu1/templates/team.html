@@ -1,0 +1,604 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- service-details.html  03:20:05 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Our Team |  En vvu marketing solutions</title>
+   <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/logo small.png' %}" />
+  <!-- google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;display=swap" rel="stylesheet">
+  <!-- css styles -->
+  <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+</head>
+<style>
+.container3 {
+  position: relative;
+  width: 100%;
+}
+
+.image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container3:hover .overlay3 {
+  opacity: .8;
+}
+
+.text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<body>
+  <!-- Start Pre-loader -->
+  <div class="pre-loader-wrap">
+    <div class="pre-loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+      <span>Loading...</span>
+    </div>
+  </div>
+  <!-- End Pre-loader -->
+   <!-- Start header section -->
+  <section class="header-section page-header">
+    <header class="header-area">
+      <div class="dope-nav-container breakpoint-off">
+        <div class="container">
+          <div class="row">
+            <!-- Main Menu -->
+            <nav class="dope-navbar justify-content-between" id="dopeNav">
+
+              <!-- Logo -->
+              <a  href="{% url 'index' %}"><img style="width: 200px" src="{% static 'assets/img/envvu png wht line.png' %}" alt=""></a>
+
+              <!-- Navbar Toggler -->
+              <div class="dope-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <!-- Menu -->
+              <div class="dope-menu">
+                <!-- close btn -->
+                <div class="dopecloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+      <!-- Nav Start -->
+                <div class="dopenav">
+                  <ul id="nav">
+                    <li><a href="{% url 'index' %}">Home</a>
+                     
+                    </li>
+
+                    <li><a href="{% url 'about' %}">About</a></li>
+                 <li class="current-dropdowns"><a href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li><a href="{% url 'digitalmarketing' %}">Digital Marketing</a></li>
+                         <li><a href="{% url 'production' %}">Multimedia Production</a></li>
+                        <li><a href="{% url 'webdevelopment' %}">Web Designing & Developments</a></li>
+                        
+                      </ul>
+                    </li>
+            <li><a href="{% url 'team' %}">Team</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'career' %}">Career</a></li>  
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
+                  </ul>
+
+                </div>
+                <!-- Nav End -->
+                <a href="{% url 'contact.html" class="menu-btn">Get a quote</a>
+              </div>
+            </nav>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row section-gap">
+        <div class="col-md-12">
+          <h1>Our Team</h1>
+          <ul class="pagination">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'service-details' %}">Team</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header section -->
+  <!-- End header section -->
+  <!-- Start team section -->
+  <section class="team-section section-gap-top team-page-section">
+    <div class="container">
+      <h1 class="title text-center">Great Businesses Need Dedicated Leadership Team
+</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 11.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'm The Big Boss Of This House, No One Can tresspass me. Mind It!!!!!!!!!!!!!!!</div>
+              </div>
+            </div>
+            <div class="details text-center yellow">
+              <h4 style="color:black">Anand Menon</h4>
+              <p style="color:black">Managing Director</p>
+              <ul>
+                <li><a href="https://www.facebook.com/envvumarketing/"><i class="icofont-facebook"></i></a></li>
+			  <li><a href="https://twitter.com/envvumarketing"><i class="icofont-twitter"></i></a></li>
+			  
+            <li><a href="https://www.youtube.com/channel/UCde3OSSxVRuugxGtvOe2A_g"><i class="icofont-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/envvumarketing/"><i class="icofont-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/envvumarketingsolutions/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 12.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'm The File Man Of This House !!!! </div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Vineeth Vijayan
+</h4>
+              <p>Director-Operation & Marketing</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+           
+             <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+           <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 1.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">Just One Look Of Mine Is Enough!!!!!!!!! &#x1F983;&#x1F983; </div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Rahul Menon K
+</h4>
+              <p>Business Development Manager</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          
+        </div>
+        <div class="col-lg-1 col-md-6">
+          
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 4.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">The Roaring Lioness Of Envvu &#128544;</div>
+              </div>
+            </div>
+            <div class="details text-center green">
+              <h4>Nandini Menon
+</h4>
+              <p>Team Leader-Digital Marketing</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 6.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">Ohh Yaa Baby !!!!! I'm Not A Paparazzi!!! &#x1F3A5;</div>
+              </div>
+            </div>
+            <div class="details text-center green">
+              <h4>Abhijith Mohandas
+</h4>
+              <p>Team Leader-production and Development</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+          <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 3.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I Dont Need Anyone's Help To Push!!!!!!!!! &#x1F60F;</div>
+              </div>
+            </div>
+            <div class="details text-center green">
+              <h4>Muhammed Hashif
+</h4>
+              <p>Team Leader-Software Development</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-6">
+          
+        </div>
+
+
+
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 10.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">No Earphone No Music!!!! Then, There Is No Me &#x1F3B6;</div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Sudheesh Kalpathy</h4>
+              <p>Video Editor</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+
+    <div  class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 2.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'm Talented, Matured and Extraodinary &#x1F3B7;&#x1F3B7;&#x1F3B7;</div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Saranya PB
+</h4>
+              <p>Web Developer</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 8.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">Come On Lets Take A Selfie!!! &#128526;&#128526;</div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Vipin Kv
+</h4>
+              <p>Graphic Designer</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       
+      
+		  <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+           <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 5.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'll Learn Malayalam ASAP!!!! &#x1F606;&#x1F606;</div>
+              </div>
+            </div>
+            <div class="details text-center purple">
+              <h4>Pavithra Devi
+</h4>
+              <p>SEO Analysts</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		     <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 9.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'll Fix Everything, Just Give Me A Sec!!!!!!</div>
+              </div>
+            </div>
+            <div class="details text-center green">
+              <h4>Muhammed Shinaz M
+</h4>
+              <p>Graphic Designer</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		          <div class="col-lg-3 col-md-6">
+          <div class="single-team">
+            <div class="thumb container3">
+              <img class="img-fluid image3" src="{% static 'assets/img/caricature 7.jpg' %}" alt="">
+              <div class="overlay3">
+                <div class="text3">I'm The Intellectual Person Of This House &#x1F60B;&#x1F60B;</div>
+              </div>
+            </div>
+            <div class="details text-center green">
+              <h4>Jishnu
+</h4>
+              <p>Python Developer</p>
+              <ul>
+                <li><a href="http://facebook.com/"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://twitter.com/"><i class="icofont-twitter"></i></a></li>
+                <li><a href="http://instagram.com/"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End team section -->
+  <!-- Start Brand Logo Section -->
+  <section class="brand-logo-section">
+    <div class="container">
+      <div class="row bottom-logo-wrap">
+        <div class="brand-logo-carousel owl-carousel owl-theme">
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand1.png" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand2.png" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand3.png" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand4.png" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand5.png" alt="">
+            </a>
+          </div>
+          <div class="single-brand-logo">
+            <a href="#">
+              <img class="img-fluid" src="assets/img/brand6.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Brand Logo Section -->
+<!-- Start subscribe-form section -->
+ <section class="subscribe-form-section">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center cta-subscribe-wrap other-page">
+        <div class="col-md-5">
+          <h4>For More Information  <br>
+            Call Us On.
+          </h4>
+        </div>
+        <div class="col-md-7">
+          <form class="input-group subscribe-form-wrap">
+            
+            <div class="input-group-append">
+              <button class="form-btn-style" type="submit">
+                <a href="tel:+91 7907575988">Call Us</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+ <br>
+ <br>
+ <br>
+  <!-- End subscribe-form section -->
+ <footer class="footer-section section-gap-top home-one">
+    <div class="container">
+      <div class="row footer-top d-flex justify-content-between">
+        <div class="col-lg-4 col-md-6 col-6 footer-widgets">
+          <img src="{% static 'assets/im/EN VVU LOGO.png' %}" alt="en vvu" width="162" height="158" class="footer-logo" >
+          <p>Phone:<a href="tel:+91 7907575988">+91 7907575988</a> <br>
+Email:<a href="mailto:info@envvumarketing.com">info@envvumarketing.com</a> </p>
+          <ul class="social-lists">
+            <li><a href="https://www.facebook.com/envvumarketing/"><i class="icofont-facebook"></i></a></li>
+        <li><a href="https://twitter.com/envvumarketing"><i class="icofont-twitter"></i></a></li>
+        
+            <li><a href="https://www.youtube.com/channel/UCde3OSSxVRuugxGtvOe2A_g"><i class="icofont-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/envvumarketing/"><i class="icofont-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/envvumarketingsolutions/"><i class="icofont-linkedin"></i></a></li>
+          </ul>
+      </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Site Map</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'blog' %}">Blog</a></li>
+        <li><a href="{% url 'team' %}">Team</a></li>  
+         <li><a href="{% url 'career' %}">Career</a></li>   
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+          
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Services</h4>
+            <ul>
+              <li><a href="{% url 'digitalmarketing' %}">Digital Marketings</a></li>
+              <li><a href="{% url 'production' %}">Production & Media</a></li>
+              <li><a href="{% url 'webdevelopment' %}">Web Design & Development</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6 footer-widgets" style="padding-top: 50px;">
+          <div class="single-widget">
+            <h4 class="wiget-title">Address</h4>
+         <p>Envvu Marketing Solution.
+2nd FLOOR GATEWAY COMPLEX
+ROBINSON ROAD PALAKKAD 678001
+PALAKKAD KERALA</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom section-gap-top d-flex align-items-center">
+        <div class="col-md-6">
+          <p style="font-size:30px; color: white; line-height: 40px;">Trying hard to be seen local?<br> Then Switch to Digital and be Global! <br></p>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="comment-buttons" style="padding-left: 70px; height: 10px;">
+            <div></div>
+            <button class="btn-style red-btn"><h3 style="padding-top: 5px;">Let's Switch to Digital</h3></button>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright-bottom d-flex align-items-center">
+        <div class="col-md-6">
+          <p><a href="envvumarketing.com">En vvu Marketing Solutions Pvt.Ltd</a></p>
+        </div>
+        <div class="col-md-6">
+          <ul>
+           
+            <li><a href="#">Privecy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer section -->
+  <!-- Start Scroll Top -->
+  <div class="scroll-top">
+    <i class="icofont-rounded-up"></i>
+  </div>
+  <!-- End Scroll Top -->
+  <script src="{% static 'assets/js/jquery-3.3.1.slim.min.js' %}"></script>
+  <script src="{% static 'assets/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/js/dopeNav.js' %}"></script>
+  <script src="{% static 'assets/js/odometer.js' %}"></script>
+  <script src="{% static 'assets/js/tilt.jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+
+<!-- service-details.html  03:20:07 GMT -->
+</html>

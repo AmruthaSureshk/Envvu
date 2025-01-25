@@ -1,0 +1,11 @@
+Contacter Name:
+{{ name }}
+
+Contacter Mail:
+{{ email }}
+
+Contacter Phone:
+{{ phone }}
+
+Contacter Place:
+{{ place }}
